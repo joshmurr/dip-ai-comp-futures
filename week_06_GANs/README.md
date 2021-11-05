@@ -22,7 +22,7 @@ Your _in class_ task is to run through the notebook and then project an image of
 
 #### A Note on Projection
 
-![Projection](./images/project_vgg.svg)
+![Projection](./images/project_vgg.png)
 
 _In a nutshell_, when we "project" and image into a model, we are comparing the output of the model to a given _target_ image, using this to measure some kind of loss, and then iteratively telling the model to make some changes to gradually reduce the loss. In the case of StyleGAN, the images are quite large and simply comparing the pixels of an image is highly inefficient and ineffective - a pixel-wise comparison is called the _perceptual loss_. What we are actually doing is downloading _another_ model called [VGG](https://neurohive.io/en/popular-networks/vgg16/) which is a model designed for image classification. If we chop the final layer off of VGG we can use it as a _feature extractor_. Essentially this just compresses our image into an abrasct representation of itself. If we do that for the image produced by the generator also, it turns out to be much more effective to _compare the abstract representations_ and form a loss value from that. The rest of the process is the same.
 
