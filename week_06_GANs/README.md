@@ -14,6 +14,8 @@
 
 # 3. __TASK!__ - StyleGAN
 
+[Work therought the StyleGAN notebook here!](https://github.com/joshmurr/machine-learnings/blob/master/cci-dsai/StyleGAN2.ipynb)
+
 StyleGAN is a household name in the machine learning world. It really made a name for itself by being the first model to make extremely convincing, relatively high resolution images of human faces (and pretty much anything else). This stoked the _how-will-we-ever-trust-an-image-again?!_ fire. Regardless StyleGAN is an amazing model and great fun to play with.
 
 Your _in class_ task is to run through the notebook and then project an image of _your face_ (or something else if you'd prefer not to) into the latent manifold of StyleGAN.
