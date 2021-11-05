@@ -1,5 +1,7 @@
 # GANs - Generative Adversarial Networks
 
+> Remember for all the notebooks below you need to copy the link and open it up in [colab.research.google.com](colab.research.google.com) as per the instructions [on this page](https://github.com/joshmurr/dip-ai-comp-futures-colab).
+
 ---
 
 # 1. DCGAN - Deep Convolutional GAN
@@ -8,11 +10,7 @@
 
 [Train a similar DCGAN on your own dataset created using a YouTube video](https://github.com/joshmurr/machine-learnings/blob/master/cci-dsai/DCGAN_Keras_Cutsom_Dataset.ipynb)
 
-# 2. BigGAN
-
-[Play with BigGAN!](https://github.com/joshmurr/machine-learnings/blob/master/bigGAN/BigGAN_Playground.ipynb)
-
-# 3. __TASK!__ - StyleGAN
+# 2. __TASK!__ - StyleGAN
 
 [Work through the StyleGAN notebook here!](https://github.com/joshmurr/machine-learnings/blob/master/cci-dsai/StyleGAN2.ipynb)
 
@@ -27,6 +25,14 @@ Your _in class_ task is to run through the notebook and then project an image of
 ![Projection](./images/project_vgg.png)
 
 _In a nutshell_, when we "project" and image into a model, we are comparing the output of the model to a given _target_ image, using this to measure some kind of loss, and then iteratively telling the model to make some changes to gradually reduce the loss. In the case of StyleGAN, the images are quite large and simply comparing the pixels of an image is highly inefficient and ineffective - a pixel-wise comparison is called the _perceptual loss_. What we are actually doing is downloading _another_ model called [VGG](https://neurohive.io/en/popular-networks/vgg16/) which is a model designed for image classification. If we chop the final layer off of VGG we can use it as a _feature extractor_. Essentially this just compresses our image into an abrasct representation of itself. If we do that for the image produced by the generator also, it turns out to be much more effective to _compare the abstract representations_ and form a loss value from that. The rest of the process is the same.
+
+# 3. BigGAN
+
+BigGAN is just a massive model which is fun to play with. During training the model is trained with the class label of the image as well, so _after_ training we can then effectively search through the model for images which suit a given class label. The notebook below has a bunch of helper functions which make it easy for you to do that. Here is an image which is both _elephant_ and _truck_... an _elephanttruck_.
+
+![Elephant Truck](./images/elephant_truck2.png)
+
+[Play with BigGAN in the notebook here!](https://github.com/joshmurr/machine-learnings/blob/master/bigGAN/BigGAN_Playground.ipynb)
 
 # 4. __HOMEWORK__ - Pix2Pix
 
