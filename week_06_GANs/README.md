@@ -14,7 +14,7 @@
 
 # 3. __TASK!__ - StyleGAN
 
-[Work therought the StyleGAN notebook here!](https://github.com/joshmurr/machine-learnings/blob/master/cci-dsai/StyleGAN2.ipynb)
+[Work through the StyleGAN notebook here!](https://github.com/joshmurr/machine-learnings/blob/master/cci-dsai/StyleGAN2.ipynb)
 
 StyleGAN is a household name in the machine learning world. It really made a name for itself by being the first model to make extremely convincing, relatively high resolution images of human faces (and pretty much anything else). This stoked the _how-will-we-ever-trust-an-image-again?!_ fire. Regardless StyleGAN is an amazing model and great fun to play with.
 
