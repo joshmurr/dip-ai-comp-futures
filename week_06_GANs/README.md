@@ -36,7 +36,7 @@ BigGAN is just a massive model which is fun to play with. During training the mo
 
 # 4. __HOMEWORK__ - Pix2Pix
 
-![Pix2Pix](./images/pix2pix_w_images.svg)
+![Pix2Pix](./images/pix2pix_w_images.png)
 
 > A slide from an older presentation, but might be handy.
 
