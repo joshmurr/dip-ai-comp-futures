@@ -12,7 +12,7 @@ In the paper they show that simply training a massive language model __GPT-3__, 
 
 This particular work led to things like [GitHub Copilot](https://copilot.github.com/) as suddenly it seemed that these models were useful for _anything_ that contained text, not just translation or finishing a sentence.
 
-Later in January 2021 OpenAI released [CLIP: Contrastive Language-Image Pre-training](https://openai.com/blog/clip/). This work is highly related as they applied the same logic to a new (massive) dataset - image/caption pairs. The internet is awash with images and their captions, think of Flikr/Facebook/Instagram and the image descriptions or even the [alt text](https://www.w3schools.com/tags/att_img_alt.asp) for images online for people who use screen readers - so the dataset was easy to make. CLIP is a nifty architecture which encodes the text and iamge seperately, but in such a way that the encoded representation can be meanigfully compared. This allows you to train a model to predict the caption of a given image. _But_ it also means you can predict how likely a given caption is to be paired with an image... a subtle different but one which has led to a-whooole-nother explosion of crazy work.
+Later in January 2021 OpenAI released [CLIP: Contrastive Language-Image Pre-training](https://openai.com/blog/clip/). This work is highly related as they applied the same logic to a new (massive) dataset - image/caption pairs. The internet is awash with images and their captions, think of Flikr/Facebook/Instagram and the image descriptions or even the [alt text](https://www.w3schools.com/tags/att_img_alt.asp) for images online for people who use screen readers - so the dataset was easy to make. CLIP is a nifty architecture which encodes the text and image seperately, but in such a way that the encoded representations can be meanigfully compared. This allows you to train a model to predict the caption of a given image. _But_ it also means you can predict how likely a given caption is to be paired with an image... a subtle different but one which has led to a-whooole-nother explosion of crazy work.
 
 If you can find out how like an image is to be paired with a caption, you could then optimise (change) the image over time to get a better score on the image/caption match.
 
@@ -20,7 +20,7 @@ If you can find out how like an image is to be paired with a caption, you could 
 
 > “cyborg dragon with neopixels” - [source](https://learn.adafruit.com/generating-ai-art-with-vqgan-clip)
 
-So you need some generative model to generate an image, a sentence _describing what you want to see in the image_ and then CLIP to compare the two. CLIP will give you some numerical representation of how well matched the image and the text are. You can use this score to inform the generator how it should change the image (to improve the score). This process will differ slightly depending on what generator you are using.
+So you need some generative model to generate an image, a sentence _describing what you want to see in the image_, and then CLIP to compare the two. CLIP will give you some numerical representation of how well matched the image and the text are. You can use this score to inform the generator how it should change the image (to improve the score). This process will differ slightly depending on what generator you are using.
 
 ![Generating images with CLIP](https://i.imgur.com/X1tqraa.gif)
 
