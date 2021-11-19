@@ -34,7 +34,7 @@ Any way, have a play, make some GIFs... make mad crypto-cash selling NFTs if you
 
 # Your Turn!
 
-![hypnogram.xyz](./images/hypnogram.png)
+![hypnogram.xyz](./images/hypongram.png)
 
 [Go to **hypnogram.xyz** and have a play with CLIP](https://hypnogram.xyz/). This will help you get a feel for it (without rinsing your Colab free-GPU-time). See what you can come up with. Try and re-create some images you have seen. Does the same prompt create the same image every time?
 
