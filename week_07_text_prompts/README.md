@@ -29,3 +29,13 @@ So you need some generative model to generate an image, a sentence _describing w
 But there's one more way of doing this as seen in the the third notebook, and that is to take the [Deep Dream](https://en.wikipedia.org/wiki/DeepDream) approach which is to directly optimise the _image itself_. In a nutshell, Deep Dream works by optimising the input image to a _classification_ model in order to increase the activation of a particular neuron in the network. You can take a similar approach with CLIP by directly optimising the image to improve the CLIP caption score. No one method is better than the other, they just all have different aesthetic qualities.
 
 Any way, have a play, make some GIFs... make mad crypto-cash selling NFTs if you want!
+
+---
+
+# Your Turn!
+
+![hypnogram.xyz](./images/hypnogram.png)
+
+[Go to **hypnogram.xyz** and have a play with CLIP](https://hypnogram.xyz/). This will help you get a feel for it (without rinsing your Colab free-GPU-time). See what you can come up with. Try and re-create some images you have seen. Does the same prompt create the same image every time?
+
+Then work through the notebooks in this repo. The first one isn't very interesting, it's just playing with CLIP in it's bare form. But might help you understand what CLIP actually does. The next two are much more fun... The notebooks have been made by some very active people in the CLIP/Twitter/Colab ML scene ([@eps696](https://twitter.com/eps69r), [@deKxi](https://twitter.com/deKxi), [@RiversHaveWings](https://twitter.com/RiversHaveWings), [@jonathanfly](https://twitter.com/jonathanfly), [@eduwatch2](https://twitter.com/eduwatch2), [@advadnoun](https://twitter.com/advadnoun), and others) who are kind enough to share they're amazing notebooks for free.
