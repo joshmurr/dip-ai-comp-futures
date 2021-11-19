@@ -34,8 +34,12 @@ Any way, have a play, make some GIFs... make mad crypto-cash selling NFTs if you
 
 # Your Turn!
 
+Work through the first notebook in this repo. It isn't very exciting, it's just playing with CLIP in it's bare form. But might help you understand what CLIP actually does.
+
+Then...
+
 ![hypnogram.xyz](../images/hypongram.png)
 
-[Go to **hypnogram.xyz** and have a play with CLIP](https://hypnogram.xyz/). This will help you get a feel for it (without rinsing your Colab free-GPU-time). See what you can come up with. Try and re-create some images you have seen. Does the same prompt create the same image every time?
+[...go to **hypnogram.xyz** and have a play with CLIP](https://hypnogram.xyz/). This will help you get a feel for it (without rinsing your Colab free-GPU-time). See what you can come up with. Try and re-create some images you have seen. Does the same prompt create the same image every time?
 
-Then work through the notebooks in this repo. The first one isn't very interesting, it's just playing with CLIP in it's bare form. But might help you understand what CLIP actually does. The next two are much more fun... The notebooks have been made by some very active people in the CLIP/Twitter/Colab ML scene ([@eps696](https://twitter.com/eps69r), [@deKxi](https://twitter.com/deKxi), [@RiversHaveWings](https://twitter.com/RiversHaveWings), [@jonathanfly](https://twitter.com/jonathanfly), [@eduwatch2](https://twitter.com/eduwatch2), [@advadnoun](https://twitter.com/advadnoun), and others) who are kind enough to share they're amazing notebooks for free.
+The next two notebooks are much more fun... The notebooks have been made by some very active people in the CLIP/Twitter/Colab ML scene ([@eps696](https://twitter.com/eps69r), [@deKxi](https://twitter.com/deKxi), [@RiversHaveWings](https://twitter.com/RiversHaveWings), [@jonathanfly](https://twitter.com/jonathanfly), [@eduwatch2](https://twitter.com/eduwatch2), [@advadnoun](https://twitter.com/advadnoun), and others) who are kind enough to share they're amazing notebooks for free.
