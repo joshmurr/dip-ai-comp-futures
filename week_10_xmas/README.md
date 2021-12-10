@@ -1,6 +1,6 @@
 # JUKEBOX!
 
-![Boris Johnson losing the plot singing Christmas carols](./images/boris-johnson-losing-the-plot-singing-christmas-carol.jpg)
+![Boris Johnson losing the plot singing Christmas carols](./boris-johnson-losing-the-plot-singing-christmas-carol.jpg)
 
 > 'Boris Johnson losing the plot singing Christmas carols'
 
