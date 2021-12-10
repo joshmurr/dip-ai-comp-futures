@@ -2,7 +2,7 @@
 
 ![Boris Johnson losing the plot singing Christmas carols](./images/boris-johnson-losing-the-plot-singing-christmas-carol.jpg)
 
-> 'Boris Johnson losing the plot singing Christmas carols'
+> Boris Johnson losing the plot singing Christmas carols
 
 ---
 
@@ -27,5 +27,9 @@ This is a bit of a slow process, but it's Christmas and there's not rush so... :
 ---
 
 ## BONUS!
+
+![Jeremy Corbyn makes a glorious comeback](./images/jeremy-corbyn-makes-a-glorious-comeback.png)
+
+> Jeremy Corbyn makes a glorious comeback
 
 [Here's a fun notebook where you can generate pixel art using the familiar CLIP guided text prompt.](https://colab.research.google.com/github/dribnet/clipit/blob/master/demos/PixelDrawer.ipynb)
