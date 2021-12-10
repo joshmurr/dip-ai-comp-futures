@@ -4,6 +4,12 @@
 
 > 'Boris Johnson losing the plot singing Christmas carols'
 
+---
+
+As ever copy the link for the `.ipynb` file above and head over to [colab.research.google.com](https://colab.research.google.com/) and do the _search-for-a-Github-repo_ thing. Better instructions [here](https://github.com/joshmurr/dip-ai-comp-futures).
+
+---
+
 We are going to have a play with Jukebox which is another mega massive pretrained model from Open-AI. Jukebox is a [VQ-VAE]() (which is proving to be a very versatile model, it is often also used with CLIP to generate images, like the one above). Open-AI do some clever stuff like training at different resolutions to learn high, medium and low level features of the music.
 
 ![Resolutions](./images/1.png)
