@@ -23,3 +23,9 @@ Jukebox was also conditioned on genres and lyrics which you can use at generatio
 You can also supply you're own lyrics, which is fun and maybe you're a natural poet, [but why not use GPT-2 to generate some Christmas carols lyrics??](https://transformer.huggingface.co/doc/gpt2-large)
 
 This is a bit of a slow process, but it's Christmas and there's not rush so... :christmas_tree: :santa:
+
+---
+
+## BONUS!
+
+[Here's a fun notebook where you can generate pixel art using the familiar CLIP guided text prompt.](https://colab.research.google.com/github/dribnet/clipit/blob/master/demos/PixelDrawer.ipynb)
