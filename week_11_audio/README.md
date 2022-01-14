@@ -2,6 +2,8 @@
 
 ## Jukebox
 
+### [Jukebox Notebook](./Interacting_with_Jukebox.ipynb)
+
 We are going to have a play with Jukebox which is another mega massive pretrained model from Open-AI. Jukebox is a [VQ-VAE]() (which is proving to be a very versatile model, it is often also used with CLIP to generate images). Open-AI do some clever stuff like training at different resolutions to learn high, medium and low level features of the music.
 
 ![Resolutions](./images/1.png)
@@ -18,7 +20,9 @@ You can also supply you're own lyrics, which is fun and maybe you're a natural p
 
 ## Audio Reactive StyleGAN2
 
-[This notebook](./StyleGAN2_AudioReactive.ipynb) allows you to generate an interpolation video using StyleGAN2 which is synced to audio. This is very cool, and pretty much what Mario Klingemann is doing here:
+### [Audio Reactive StyleGAN2 Notebook](./StyleGAN2_AudioReactive.ipynb)
+
+This notebook] allows you to generate an interpolation video using StyleGAN2 which is synced to audio. This is very cool, and pretty much what Mario Klingemann is doing here:
 
 [![Mario Klingemann](https://img.youtube.com/vi/A6bo_mIOto0/0.jpg)](https://www.youtube.com/watch?v=A6bo_mIOto0)
 
@@ -28,4 +32,6 @@ I'd recommend giving it a go with a shorter audio snippet first to get a feel fo
 
 ## Accent Conversion
 
-[This notebook](./YourTTS_zeroshot_TTS_demo.ipynb) allows you to upload some audio of you speaking (or of someone else) and find out what you would sound like if you could speak French or Brazilian Portuguese. It captures the "essence" of your voice, so to speak, and then can pass than on to _new audio_ in another language and play it back to you.
+### [Accent Conversion Notebook](./YourTTS_zeroshot_TTS_demo.ipynb)
+
+This notebook allows you to upload some audio of you speaking (or of someone else) and find out what you would sound like if you could speak French or Brazilian Portuguese. It captures the "essence" of your voice, so to speak, and then can pass than on to _new audio_ in another language and play it back to you.
