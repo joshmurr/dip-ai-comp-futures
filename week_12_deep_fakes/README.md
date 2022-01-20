@@ -36,10 +36,6 @@ The notebook does it all the long and proper way.. And as I'm sure you've realis
 
 This notebook is the demo to go alongside [this research](https://aliaksandrsiarohin.github.io/first-order-model-website/) under the name above. This work has the capacity to apply the same principles of deepfakes but to full figure animation and even cartoon animation:
 
-![Faces](https://aliaksandrsiarohin.github.io/first-order-model-website/vox-teaser.gif)
-
-![Full fig](https://aliaksandrsiarohin.github.io/first-order-model-website/fashion-teaser.gif)
-
 ![Cartoon](https://aliaksandrsiarohin.github.io/first-order-model-website/mgif-teaser.gif)
 
 However the notebook is a more "user friendly" version which just means its not as powerful, but you get results quicker. They have injected a bunch of HTML and CSS into the notebook which makes a GUI thing at the bottom. There are only a couple cells to run, so once the GUI appears at the bottom you can upload an image to be manipulated, and choose or upload a video file to be the puppeteer, if you will. The video needs to be a fairly specific format however, so doesnt always work.
