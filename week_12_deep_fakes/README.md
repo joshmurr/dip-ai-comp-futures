@@ -30,7 +30,74 @@ The idea is to match the faces as closely as possible by cropping and rotating e
 
 DeepFaceLab wrote the paper mentioned above and have created some DeepFake software to make this deceptive stuff even easier! The best place to find out more in [on their Github](https://github.com/iperov/DeepFaceLab).
 
-The notebook does it all the long and proper way.. And as I'm sure you've realised by now working with high quality images or video is a slow process with machine learning. It's fiddly to set up (lots of data prep) and slow to run (I think about 11 hours)... But its there and I presume you get good results if you go through the process (I haven't got there yet, currently in hour 1 of the training process...).
+The notebook does it all the long and proper way.. And as I'm sure you've realised by now working with high quality images or video is a slow process with machine learning. It's fiddly to set up (lots of data prep) and slow to run... But not that bad, I went through the process and trained for about an hour which is long enough to see results. But if you want to make a convincing deepfake that'll spark some new consipiracy theory in the depths of a Telegram based counterculture... you might need to wait a bit longer.
+
+Here are some tips for getting it all setup:
+
+1. A lot of the cells are grouped together and collapsed, make sure to expand the cells and run them one by one, don't try and run a batch at once.
+2. After running the cell titles **Install or update DeepFaceLab**, you may need to press the **Restart Runtime** button.
+3. You need a **source** video (the puppeteer), and a **destination** video (the face to be manipulated). I recommend finding these online, or recording some, uploading to your drive and then copying them over to the Colab session. The files need to be in the following locations and have the correct names:
+
+    - `/content/workspace/data_dst.mp4`
+    - `/content/workspace/data_src.mp4`
+
+4. The section **Extract, sorting and faceset tools** is a bit slow, its the data preparation stage. Each cell often has some options about image size/format/type/etc. which you will need to choose options for. It's not obvious on Colab, but sometimes you can enter values into the _output_ section of the cell, you will see this again at the end of the notebook when you come to train the model:
+
+    ![Enter values](./images/enter-val.png)
+
+    The settings I used for the final training cell are as follows:
+
+    ```
+    ================= Model Summary =================
+    ==                                             ==
+    ==            Model name: murr_SAEHD           ==
+    ==                                             ==
+    ==     Current iteration: 100                  ==
+    ==                                             ==
+    ==--------------- Model Options ---------------==
+    ==                                             ==
+    ==            resolution: 128                  ==
+    ==             face_type: head                 ==
+    ==     models_opt_on_gpu: True                 ==
+    ==                 archi: liae-ud              ==
+    ==               ae_dims: 256                  ==
+    ==                e_dims: 64                   ==
+    ==                d_dims: 64                   ==
+    ==           d_mask_dims: 22                   ==
+    ==       masked_training: True                 ==
+    ==       eyes_mouth_prio: False                ==
+    ==           uniform_yaw: False                ==
+    ==         blur_out_mask: False                ==
+    ==             adabelief: True                 ==
+    ==            lr_dropout: n                    ==
+    ==           random_warp: True                 ==
+    ==      random_hsv_power: 0.0                  ==
+    ==       true_face_power: 0.0                  ==
+    ==      face_style_power: 0.0                  ==
+    ==        bg_style_power: 0.0                  ==
+    ==               ct_mode: none                 ==
+    ==              clipgrad: False                ==
+    ==              pretrain: False                ==
+    ==       autobackup_hour: 1                    ==
+    == write_preview_history: True                 ==
+    ==           target_iter: 100                  ==
+    ==       random_src_flip: False                ==
+    ==       random_dst_flip: True                 ==
+    ==            batch_size: 8                    ==
+    ==             gan_power: 0.0                  ==
+    ==        gan_patch_size: 16                   ==
+    ==              gan_dims: 16                   ==
+    ==                                             ==
+    ==---------------- Running On -----------------==
+    ==                                             ==
+    ==          Device index: 0                    ==
+    ==                  Name: Tesla P100-PCIE-16GB ==
+    ==                  VRAM: 14.61GB              ==
+    ==                                             ==
+    =================================================
+    ```
+
+    The main one is `target_iter` which refers to the **total number of iterations**, you can train for a few and then continue training. Each iteration in this case does not take too long so here I trained for 100 iterations to make sure it all worked, and then ran it again with 10,000 iterations.
 
 ### 2. [First Order Motion Model for Image Animation Colab Notebook](https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb)
 
